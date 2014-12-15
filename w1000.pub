@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class w1000 {
+public static void main(String args[]){
+	Scanner w1000 = new Scanner(System.in);
+	while(w1000.hasNext()){
+		int sum = 0;
+		int a = w1000.nextInt();
+		int b = w1000.nextInt();
+		sum = a+b;
+	System.out.println(sum);
+}
+}
+}
