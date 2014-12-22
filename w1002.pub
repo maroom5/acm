@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class w1002 {
+public static void main(String args[]) {
+	Scanner w1002 = new Scanner(System.in);
+	while(w1002.hasNextInt()) {
+		int a = w1002.nextInt();
+		for(int i=1;i<=a;i++) {
+			long z = 1;
+			int u = 0;
+			int y = w1002.nextInt();
+			u = y%4;
+			if(u==0) {
+				u = 4;
+			}
+		for(int j=1;j<=u;j++) {
+			z = z*y;
+			z = z%10;
+		}
+		System.out.println(z);
+		}
+	}
+}
+}
