@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner w1008 = new Scanner(System.in);
+        while(w1008.hasNextInt()) {
+            int y = w1008.nextInt();
+                if(y == 0) {
+                    break;
+                }
+                int b = 0;
+                int c = 0; 
+                int d[] = new int[y+1];
+                d[0] = 0;
+                        for(int i =1;i<=y;i++) {
+                            d[i] = w1008.nextInt();
+                            if(d[i]>d[i-1]) {
+                                b = b+(d[i]-d[i-1]);
+                            }
+                            if(d[i]<d[i-1]) {
+                                c = c+(d[i-1]-d[i]);
+                            }
+            }
+                        System.out.println(c*4+b*6+5*y);
+        }
+    }
+}
